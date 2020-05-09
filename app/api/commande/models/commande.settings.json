@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "name": "Commande"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "notes": {
+      "type": "text"
+    },
+    "chouettos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "chouettos.identite",
+      "required": false
+    },
+    "produits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "drive.produit",
+      "required": false
+    },
+    "statut": {
+      "type": "enumeration",
+      "enum": [
+        "nouvelle",
+        "imprimee",
+        "preparation",
+        "prete",
+        "livree"
+      ],
+      "default": "nouvelle"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

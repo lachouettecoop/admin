@@ -1,0 +1,21 @@
+version: "3"
+services:
+  strapi:
+    image: strapi/strapi:3.0.0-beta.20.3-node12-alpine
+    volumes:
+      - ./app:/srv/app
+    ports:
+      - "1337"
+    networks:
+      - default
+      - traefik
+    labels:
+      traefik.docker.network: traefik
+      traefik.port: "1337"
+      traefik.frontend.rule: "Host:admin.lachouettecoop.test"
+    environment:
+      NODE_ENV: production
+
+networks:
+  traefik:
+    external: true

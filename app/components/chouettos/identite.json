@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_chouettos_identite",
+  "info": {
+    "name": "Identité",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

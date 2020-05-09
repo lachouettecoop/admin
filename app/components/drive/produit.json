@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_drive_produits",
+  "info": {
+    "name": "Produit",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "odoo_id": {
+      "type": "string",
+      "required": true
+    },
+    "quantite": {
+      "type": "decimal",
+      "required": true
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "barcode": {
+      "type": "string"
+    }
+  }
+}
