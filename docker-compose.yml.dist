@@ -1,7 +1,7 @@
 version: "3"
 services:
   strapi:
-    image: strapi/strapi:3.0.0-beta.20.3-node12-alpine
+    image: strapi/strapi:3.0.0-beta.20.3-node12
     volumes:
       - ./app:/srv/app
     ports:
