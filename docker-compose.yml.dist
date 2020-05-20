@@ -13,8 +13,8 @@ services:
       traefik.docker.network: traefik
       traefik.port: "1337"
       traefik.frontend.rule: "Host:admin.lachouettecoop.test"
-    environment:
-      NODE_ENV: production
+    # environment:
+    #   NODE_ENV: production
 
 networks:
   traefik:
