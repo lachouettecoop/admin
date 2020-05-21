@@ -31,7 +31,8 @@
         "imprimee",
         "preparation",
         "prete",
-        "livree"
+        "livree",
+        "archivee"
       ],
       "default": "nouvelle"
     },
