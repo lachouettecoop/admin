@@ -29,8 +29,8 @@
       "enum": [
         "nouvelle",
         "imprimee",
-        "preparation",
-        "prete",
+        "preparee",
+        "caisse",
         "livree",
         "archivee"
       ],
